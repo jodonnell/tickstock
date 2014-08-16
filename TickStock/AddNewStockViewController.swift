@@ -62,6 +62,7 @@ class AddNewStockViewController: UIViewController {
 
     func add() {
         var stock = Stock(name: self.name.text, price: (self.price.text as NSString).floatValue, number: self.number.text.toInt()!)
+        self.navigationController.popViewControllerAnimated(true)
     }
 
     func setupViewElements() {
