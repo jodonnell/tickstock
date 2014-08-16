@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
 
     func newStock() {
-        let vc = AddNewStockViewController()
+        let vc = AddNewStockViewController(nibName: nil, bundle: nil)
         self.navigationController.pushViewController(vc, animated:true)
 
     }
