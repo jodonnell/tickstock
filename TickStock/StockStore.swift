@@ -35,6 +35,20 @@ class StockStore {
         return self.stocks
     }
 
+    func remove(removeStock: Stock) {
+        var i: Int?
+        var count = 0
+        for stock in self.all() {
+            if stock == removeStock {
+                i = count
+            }
+            count++
+        }
+        if var index = i {
+            self.stocks.removeAtIndex(index)
+        }
+    }
+
     func itemArchivePath() -> String {
         let documentsPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
         return documentsPath.stringByAppendingPathComponent("stocks.archive")
