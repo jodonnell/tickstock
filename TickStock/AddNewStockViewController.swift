@@ -61,7 +61,9 @@ class AddNewStockViewController: UIViewController {
     }
 
     func add() {
-        var stock = Stock(name: self.name.text, price: (self.price.text as NSString).floatValue, number: self.number.text.toInt()!)
+        let stock = Stock(name: self.name.text, price: (self.price.text as NSString).floatValue, number: self.number.text.toInt()!)
+        let store = StockStore.sharedInstance
+        store.add(stock)
         self.navigationController.popViewControllerAnimated(true)
     }
 
