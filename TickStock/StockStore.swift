@@ -19,6 +19,12 @@ class StockStore {
 
     init() {
         self.stocks = []
+        let path = self.itemArchivePath()
+        if var stocks: AnyObject = NSKeyedUnarchiver.unarchiveObjectWithFile(path) {
+            for stock in stocks as [Stock] {
+                self.add(stock)
+            }
+        }
     }
 
     func add(stock: Stock) {
