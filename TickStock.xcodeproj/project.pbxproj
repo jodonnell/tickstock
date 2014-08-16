@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1671B2BC199C4DA200CC185B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671B2BB199C4DA200CC185B /* AppDelegate.swift */; };
 		1671B2BE199C4DA200CC185B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671B2BD199C4DA200CC185B /* ViewController.swift */; };
-		1671B2C1199C4DA200CC185B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1671B2BF199C4DA200CC185B /* Main.storyboard */; };
 		1671B2C3199C4DA200CC185B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1671B2C2199C4DA200CC185B /* Images.xcassets */; };
 		1671B2CF199C4DA200CC185B /* TickStockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671B2CE199C4DA200CC185B /* TickStockTests.swift */; };
 		1671B2D9199C521B00CC185B /* AddNewStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671B2D8199C521B00CC185B /* AddNewStockViewController.swift */; };
@@ -32,7 +31,6 @@
 		1671B2BA199C4DA200CC185B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1671B2BB199C4DA200CC185B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1671B2BD199C4DA200CC185B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1671B2C0199C4DA200CC185B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1671B2C2199C4DA200CC185B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1671B2C8199C4DA200CC185B /* TickStockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickStockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1671B2CD199C4DA200CC185B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +82,6 @@
 				1671B2D8199C521B00CC185B /* AddNewStockViewController.swift */,
 				1671B2BB199C4DA200CC185B /* AppDelegate.swift */,
 				1671B2BD199C4DA200CC185B /* ViewController.swift */,
-				1671B2BF199C4DA200CC185B /* Main.storyboard */,
 				1671B2C2199C4DA200CC185B /* Images.xcassets */,
 				1671B2B9199C4DA200CC185B /* Supporting Files */,
 				1671B2DA199CD9A800CC185B /* Stock.swift */,
@@ -198,7 +195,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1671B2C1199C4DA200CC185B /* Main.storyboard in Resources */,
 				1671B2C3199C4DA200CC185B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,17 +238,6 @@
 			targetProxy = 1671B2C9199C4DA200CC185B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1671B2BF199C4DA200CC185B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1671B2C0199C4DA200CC185B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1671B2D0199C4DA200CC185B /* Debug */ = {

@@ -8,16 +8,34 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UITableViewController {
                             
+
+    override func loadView() {
+        self.tableView = UITableView()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let newStockButton = UIBarButtonItem(title:"Add new stock", style: UIBarButtonItemStyle.Bordered, target:self, action:"newStock")
         self.navigationItem.rightBarButtonItem = newStockButton
-        // Do any additional setup after loading the view, typically from a nib.
+
+        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
+
+    // override func viewDidLoad() {
+    //     self.super()
+    //      CGFloat x = 0
+    //      CGFloat y = 50
+    //      CGFloat width = self.view.frame.size.width
+    //      CGFloat height = self.view.frame.size.height - 50
+    //      CGRect tableFrame = CGRectMake(x, y, width, height);
+
+    //     self.tableView = UITableView(tableFrame, style: UITableViewStyle.Plain)
+    // }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -26,6 +44,20 @@ class ViewController: UIViewController {
     func newStock() {
         let vc = AddNewStockViewController(nibName: nil, bundle: nil)
         self.navigationController.pushViewController(vc, animated:true)
+
+    }
+
+    override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
+        return StockStore.sharedInstance.all().count
+    }
+
+    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+        var cell:UITableViewCell = self.tableView.dequeueReusableCellWithIdentifier("cell") as UITableViewCell
+        cell.textLabel.text = StockStore.sharedInstance.all()[indexPath.row].name
+        return cell
+    }
+
+    override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
 
     }
 }
