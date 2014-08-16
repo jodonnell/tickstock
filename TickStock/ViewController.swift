@@ -23,6 +23,10 @@ class ViewController: UITableViewController {
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
 
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.tableView.reloadData()
+    }
 
     // override func viewDidLoad() {
     //     self.super()
@@ -44,7 +48,6 @@ class ViewController: UITableViewController {
     func newStock() {
         let vc = AddNewStockViewController(nibName: nil, bundle: nil)
         self.navigationController.pushViewController(vc, animated:true)
-
     }
 
     override func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int {
@@ -58,7 +61,9 @@ class ViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-
+        let vc = StockDetailViewController(nibName: nil, bundle: nil)
+        vc.stock = StockStore.sharedInstance.all()[indexPath.row]
+        self.navigationController.pushViewController(vc, animated:true)
     }
 }
 

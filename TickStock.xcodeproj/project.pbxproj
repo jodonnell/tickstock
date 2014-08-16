@@ -14,6 +14,7 @@
 		1671B2D9199C521B00CC185B /* AddNewStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671B2D8199C521B00CC185B /* AddNewStockViewController.swift */; };
 		1671B2DB199CD9A800CC185B /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1671B2DA199CD9A800CC185B /* Stock.swift */; };
 		16798BD1199FAF7C0076C856 /* StockStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16798BD0199FAF7C0076C856 /* StockStore.swift */; };
+		16798BD3199FBDCB0076C856 /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16798BD2199FBDCB0076C856 /* StockDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		1671B2D8199C521B00CC185B /* AddNewStockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewStockViewController.swift; sourceTree = "<group>"; };
 		1671B2DA199CD9A800CC185B /* Stock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		16798BD0199FAF7C0076C856 /* StockStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockStore.swift; sourceTree = "<group>"; };
+		16798BD2199FBDCB0076C856 /* StockDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				1671B2B9199C4DA200CC185B /* Supporting Files */,
 				1671B2DA199CD9A800CC185B /* Stock.swift */,
 				16798BD0199FAF7C0076C856 /* StockStore.swift */,
+				16798BD2199FBDCB0076C856 /* StockDetailViewController.swift */,
 			);
 			path = TickStock;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16798BD3199FBDCB0076C856 /* StockDetailViewController.swift in Sources */,
 				1671B2BE199C4DA200CC185B /* ViewController.swift in Sources */,
 				1671B2D9199C521B00CC185B /* AddNewStockViewController.swift in Sources */,
 				1671B2DB199CD9A800CC185B /* Stock.swift in Sources */,

@@ -30,4 +30,8 @@ class Stock: NSObject, NSCoding {
         aCoder.encodeFloat(self.price, forKey:"price")
         aCoder.encodeInt(Int32(self.number), forKey:"number")
     }
+
+    func total() -> Float {
+        return self.price * Float(self.number)
+    }
 }
